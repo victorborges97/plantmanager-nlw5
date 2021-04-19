@@ -76,13 +76,13 @@ PlantManager - O projeto surgiu com a missão de trazer um app para todos aquele
     $ git clone https://github.com/victorborges97/plantmanager-nlw5
 
     <span class="pl-c"><span class="pl-c">#</span> Acesse a pasta do projeto no prompt de comando.</span>
-    \$ cd plantmanager-nlw5
+    $ cd plantmanager-nlw5
 
     <span class="pl-c"><span class="pl-c">#</span> Instale as dependências</span>
-    \$ expo install
+    $ expo install
 
     <span class="pl-c"><span class="pl-c">#</span> Execute o script "start"</span>
-    \$ expo start
+    $ expo start
 
     <span class="pl-c"><span class="pl-c">#</span> O projeto Mobile inciará na porta: 19002 - acesse http://localhost:19002 </span>
 
