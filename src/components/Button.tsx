@@ -1,26 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
-import colors from "../../styles/colors"
+import colors from "../styles/colors"
+import fonts from '../styles/fonts';
 
 interface ButtonProps extends TouchableOpacityProps {
     title: string;
-    widthB?: number;
-    optionsBtn?: object;
-    optionsText?: object;
-    hasName?: boolean;
 }
 
-export function Button({ title, widthB, optionsBtn, optionsText, hasName, ...rest } : ButtonProps) {
+export function Button({ title, ...rest } : ButtonProps) {
   return (
     <TouchableOpacity
-        activeOpacity={hasName ? 0.2 : 0.8}
-        style={[styles.botao, optionsBtn]}
+        activeOpacity={0.8}
+        style={styles.botao}
         {...rest}
-        disabled={hasName}
     >
         <Text
-            style={[styles.text_botao, optionsText]}
+            style={styles.text_botao}
         >
             { title }
         </Text>
@@ -34,11 +30,11 @@ const styles = StyleSheet.create({
       justifyContent: "center",
       alignItems: "center",
       borderRadius: 16,
-      marginBottom: 10,
       height: 56,
   },
   text_botao: {
       color: colors.white,
-      fontSize: 24,
+      fontSize: 16,
+      fontFamily: fonts.heading,
   },
 });
