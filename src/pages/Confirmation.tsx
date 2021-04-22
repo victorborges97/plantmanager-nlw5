@@ -12,7 +12,7 @@ export default function Confirmation() {
     const { navigate } = useNavigation()
 
     const handleSubmit = () => {
-        alert("Confirmado")
+        navigate("PlantSelect")
     }
 
     return(
